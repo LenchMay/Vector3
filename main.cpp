@@ -38,5 +38,6 @@ int main() {
 
     cout<< "Normalize B: " << B.getNormalized();
 
+    system("pause");
     return 0;
 }
