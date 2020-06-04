@@ -86,31 +86,18 @@ Vector3 operator+(const Vector3& our, const Vector3& other) {
 }
     
 Vector3 operator-(const Vector3& our, const Vector3& other) {
-    Vector3 otv;
-    for (int i = 0; i < Vector3::n; i++) {
-        otv.elem[i] = our.elem[i] - other.elem[i];
-    }
-    return otv;
+    return Vector3(our) -= other;
 }
 Vector3 operator*(const Vector3& our, double number) {
-    Vector3 otv;
-    for (int i = 0; i < Vector3::n; i++) {
-        otv.elem[i] = our.elem[i] * number;
-    }
-    return otv;
+    return Vector3(our) *= number;
 }
     
 Vector3 operator*(const double number, const Vector3& our) {
-    Vector3 otv = our*number;
-    return otv;
+    return Vector3(our) *= number;
 }
     
 Vector3 operator/(const Vector3& our, const double number){
-    Vector3 otv;
-    for (int i = 0; i < Vector3::n; i++) {
-        otv.elem[i] = our.elem[i] / number;
-    }
-    return otv;
+    return Vector3(our) /= number;
 }
 
 
