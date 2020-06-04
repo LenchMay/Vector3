@@ -13,7 +13,7 @@
 class Vector3 {
 public:
     const static unsigned int n = 3;
-    Vector3(); // пустой конструктор
+    Vector3(); // РїСѓСЃС‚РѕР№ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
     Vector3(double arg);
     Vector3(const double arg[3]);
     Vector3(const Vector3& other);
@@ -47,5 +47,4 @@ private:
 
 bool operator!=(const Vector3& our, const Vector3& other);
 
-#endif // VECTOR3_H
-#pragma once
+#endif
