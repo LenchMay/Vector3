@@ -160,11 +160,6 @@ std::ostream& operator<<(std::ostream& stream, const Vector3& V) {
 }
    
 const double* Vector3::getElements() {
-    double *otv;
-    otv = new double[3];
-    for (int i = 0; i < n; i++) {
-        otv[i] = elem[i];
-    }
     return elem;
 }
 
